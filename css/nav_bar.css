@@ -1,0 +1,104 @@
+/*  change fonts of nav bar!*/
+
+nav .brand-logo {
+    margin-left: 100px;
+}
+
+nav ul {
+    margin-right: 100px;
+}
+
+
+
+nav {
+    background-color: #ffffff;
+    border-bottom: solid 3px #FFB561;
+}
+
+/*   shadow of nav bar   */
+.z-depth-1,
+nav,
+.card-panel,
+.card,
+.toast,
+.btn,
+.btn-large,
+.btn-small,
+.btn-floating,
+.dropdown-content,
+.collapsible,
+.sidenav {
+
+/*    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.10), 0 3px 1px -2px rgba(0, 0, 0, 0.02), 0 1px 5px 0 rgba(0, 0, 0, 0.1);*/
+
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.brand-logo {
+    max-height: 38%;
+    margin-top: 20px;
+}
+
+
+nav ul a {
+    color: black;
+/*    text-transform: uppercase;*/
+    
+}
+
+nav ul a:hover {
+    /*  background-color: rgba(0, 0, 0, 0.1);*/
+/*        background-color: rgba(255, 181, 97, 0.1);*/
+    background-color: transparent;
+    border-bottom: solid 3px #01B0CC;
+/*    border-bottom: solid 3px #EB7418;*/
+    height: 64px;
+       font-weight: bold;
+}
+
+nav ul a:active {
+    /*  background-color: rgba(0, 0, 0, 0.1);*/
+/*        background-color: rgba(255, 181, 97, 0.1);*/
+    background-color: transparent;
+    border-bottom: solid 3px #004965;
+/*    border-bottom: solid 3px #EB7418;*/
+    height: 64px;
+       font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+i.material-icons {
+    color: black;
+}
+
+/* changed hover on elements in sidenav after clicking hamburger menu */
+.sidenav li > a:hover {
+/*  background-color: rgba(0, 0, 0, 0.05);*/
+/*    background-color: transparent;*/
+/*      background-color: rgba(1, 176, 204, 0.05);*/
+    background-color: rgba(255, 181, 97, 0.1);
+/*    border-top: solid 2px #01B0CC;*/
+/*    border-bottom: solid 2px #01B0CC;*/
+    font-weight: bold;
+}
+
+
+
+
+@media only screen and (max-width: 992px) {
+nav .brand-logo {
+    margin-left: 0;
+}
+    nav ul {
+    margin-right: 0;
+}
+
+}

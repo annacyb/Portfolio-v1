@@ -9,17 +9,42 @@
     <meta name="robots" content="noindex, nofollow">
     <link rel="icon" type="image/svg" href="images/logo_icon3.png">
     <title>ancy.design</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" />
+
+    <link href="./css/nav_bar.css" type="text/css" rel="stylesheet" />
+    <link href="./css/home.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
-    <nav></nav>
+    <div id="home"></div>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="index.html">
+                <img src="./images/ancy_logo.png" alt="Logo" class="brand-logo"></a>
 
-    <section id="section1"></section>
-    <section id="section2"></section>
-    
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About me</a></li>
+    </ul>
+
+    <section id="home-content"></section>
+    <section id="work"></section>
+    <section id="about"></section>
+
     <footer></footer>
 </body>
-<script src="script.js"></script>
+<script src="./js/script.js"></script>
 
 </html>
