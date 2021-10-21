@@ -114,7 +114,6 @@
 .filterButton:hover::before {
     transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
     border-radius: 50px;
-
 }
 
 .filterButton:focus {
@@ -145,8 +144,6 @@
 }
 .filterButton-active:focus {
     background-color: #a6d6f3;
-
-}
 }
 
 @media only screen and (max-width: 510px) {

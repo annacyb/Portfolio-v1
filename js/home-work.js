@@ -1,6 +1,6 @@
 "use strict";
 
-// GLOBAL VARIABLES
+// ---------- GLOBAL VARIABLES ----------//
 
 let SELECTEDFILTERS = [];
 const PROJECTS = [
@@ -78,16 +78,15 @@ const PROJECTS = [
     },
 ];
 
+//--------------------//
+
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
     let container = document.querySelector(".container");
     // let container = document.querySelector(".container")[0];
 
-    PROJECTS.forEach(function (proj) {
-        create_project(container, proj);
-    });
-
+    showFilteredProjects();
     filterProjects();
 }
 
@@ -117,13 +116,33 @@ function changeFiltering(event) {
     if (SELECTEDFILTERS.includes(targetContent)) {
         const index = SELECTEDFILTERS.indexOf(targetContent);
         SELECTEDFILTERS.splice(index, 1);
-
         target.classList.remove("filterButton-active");
         target.classList.add("filterButton");
+        showFilteredProjects();
     } else {
         SELECTEDFILTERS.push(targetContent);
         target.classList.remove("filterButton");
         target.classList.add("filterButton-active");
+        showFilteredProjects();
     }
     console.log("LISTA ", SELECTEDFILTERS);
+}
+
+function showFilteredProjects() {
+    document.querySelector(".container").innerHTML = "";
+    let container = document.querySelector(".container");
+
+    if (SELECTEDFILTERS.length == 0) {
+        PROJECTS.forEach(function (proj) {
+            create_project(container, proj);
+        });
+    } else {
+        PROJECTS.forEach(function (proj) {
+            SELECTEDFILTERS.forEach(function (filter) {
+                if (proj.filters.includes(filter)) {
+                    create_project(container, proj);
+                }
+            });
+        });
+    }
 }
