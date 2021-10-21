@@ -15,15 +15,15 @@
 }
 
 h1 {
-    font-family: "Playfair", Georgia, serif;
-    font-size: 2em;
+    font-family: "Playfair", Georgia, serif !important;
+    font-size: 2em !important;
 }
 
 h2 {
-    font-family: "Playfair", Georgia, serif;
-    font-size: 1.7em;
-    padding: 0;
-    padding-top: 0.5%;
+    font-family: "Playfair", Georgia, serif !important;
+    font-size: 1.5em !important;
+    padding: 0 !important;
+    padding-top: 0.5% !important;
 }
 
 h3 {
