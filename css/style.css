@@ -11,6 +11,7 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: transparent;
 }
 
 h1 {
@@ -18,50 +19,45 @@ h1 {
     font-size: 2em;
 }
 
-p {
-    font-family: "Lato", Arial, sans-serif;
-    font-size: 17px;
-    line-height: 1.5;
+h2 {
+    font-family: "Playfair", Georgia, serif;
+    font-size: 1.7em;
+    padding: 0;
+    padding-top: 0.5%;
+}
+
+h3 {
+    font-family: "Playfair", Georgia, serif !important;
+    font-size: 1.2em !important;
+    line-height: 1.2 !important;
+    align-self: center !important;
+    text-align: center !important;
+    margin-top: 5% !important;
+    margin-bottom: 0 !important;
+    /* max-width: 300px; */
+    max-width: fit-content !important;
+}
+
+h4 {
+    font-family: "Lato", Arial, sans-serif !important;
+    font-size: 0.9em !important;
+    line-height: 1.5 !important;
+    color: #4d4d4d !important;
+    align-self: center !important;
+    text-align: center !important;
+    margin-top: 3% !important;
+    /* max-width: 300px; */
+    max-width: fit-content !important;
 }
 
 body {
-    /* position: relative; */
+    font-size: 16px;
 }
 
-nav {
-    position: fixed;
-}
-
-/* CHECKING OUT */
-#home-content {
-    height: 600px;
-    width: 100vw;
-    border: 3px black solid;
-    background-color: yellow;
-}
-#work {
-    height: 600px;
-    width: 100vw;
-    border: 3px black solid;
-    background-color: aquamarine;
-}
-
-#about {
-    height: 600px;
-    width: 100vw;
-    border: 3px black solid;
-    background-color: blue;
-}
-/* checking out */
-
-.main_grid {
-    /* grid-area: main_grid;
-    display: grid;
-    grid-template-areas: "gr gr . img img img img .";
-    grid-template-columns: repeat(8, 1fr);
-    grid-column-gap: 16px;
-    grid-row-gap: 0;
-    margin: 0; */
+p {
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 a {
@@ -69,21 +65,35 @@ a {
     color: white;
 }
 
-@media only screen and (max-width: 680px) {
-    .main_grid {
-        /* grid-area: main_grid;
-        display: grid;
-        grid-template-areas:
-            "img img img img"
-            "gr gr gr gr"
-            "pom pom pom pom";
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 0.2fr;
-        grid-column-gap: 0px;
-        grid-row-gap: 0;
-        margin: 0; */
-    }
+nav {
+    position: fixed;
+    z-index: 1;
+}
 
+/* CHECKING OUT */
+#home-content {
+    height: 600px;
+    width: 100vw;
+    border: 3px black solid;
+}
+#work {
+    height: auto;
+    border: 3px black solid;
+}
+
+#about {
+    height: 600px;
+    width: 100vw;
+    border: 3px black solid;
+}
+
+#contact {
+    height: 600px;
+    width: 100vw;
+    border: 3px black solid;
+}
+
+@media only screen and (max-width: 680px) {
     #pom {
         grid-area: pom;
         background-color: #ffb561;
