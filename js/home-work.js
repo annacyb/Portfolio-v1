@@ -1,4 +1,9 @@
-const projects = [
+"use strict";
+
+// GLOBAL VARIABLES
+
+let SELECTEDFILTERS = [];
+const PROJECTS = [
     {
         title: "L'Atelier Michaud website redesign",
         filters: "UX/UI design | UX research | Front-end | Graphic design",
@@ -73,13 +78,18 @@ const projects = [
     },
 ];
 
-let container = document.querySelector(".container");
-// let container = document.querySelector(".container")[0];
-console.log("CONT", container);
+document.addEventListener("DOMContentLoaded", init);
 
-projects.forEach(function (proj) {
-    create_project(container, proj);
-});
+function init() {
+    let container = document.querySelector(".container");
+    // let container = document.querySelector(".container")[0];
+
+    PROJECTS.forEach(function (proj) {
+        create_project(container, proj);
+    });
+
+    filterProjects();
+}
 
 function create_project(box, work) {
     let div = document.createElement("div");
@@ -92,4 +102,28 @@ function create_project(box, work) {
     `;
     div.className = "item";
     box.appendChild(div);
+}
+
+function filterProjects() {
+    document
+        .querySelectorAll(".filterButton")
+        .forEach((option) => option.addEventListener("click", changeFiltering));
+}
+
+function changeFiltering(event) {
+    const target = event.currentTarget;
+    const targetContent = target.textContent;
+
+    if (SELECTEDFILTERS.includes(targetContent)) {
+        const index = SELECTEDFILTERS.indexOf(targetContent);
+        SELECTEDFILTERS.splice(index, 1);
+
+        target.classList.remove("filterButton-active");
+        target.classList.add("filterButton");
+    } else {
+        SELECTEDFILTERS.push(targetContent);
+        target.classList.remove("filterButton");
+        target.classList.add("filterButton-active");
+    }
+    console.log("LISTA ", SELECTEDFILTERS);
 }
