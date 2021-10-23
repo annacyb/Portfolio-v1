@@ -12,11 +12,20 @@
     top: 27%;
     left: 15%;
     width: 630px;
+    /* position: absolute;
+    top: 27%;
+    left: 15%;
+    width: 730px;
+    background-color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px; */
 }
 
 .p-hero {
     font-size: 1.3rem !important;
-    line-height: 1.8rem !important;
+    line-height: 2rem !important;
+    margin-top: -5px;
 }
 
 #heroButton {
@@ -33,7 +42,12 @@
     background-color: #dd8051;
     border-radius: 0px;
     box-shadow: 0px 2px 5px 0px #e7a381;
-    margin-top: 25px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#heroButton:hover {
+    background-color: #e47137;
 }
 
 #hero-profile {
@@ -71,8 +85,7 @@
     transform-origin: 50% 50%;
 }
 
-.circle {
-    content: "";
+.shape1 {
     position: absolute;
     top: 75%;
     left: 0;
@@ -84,15 +97,48 @@
     z-index: -6;
 }
 
-.circle2 {
-    content: "";
+.shape2 {
     position: absolute;
-    top: 5vh;
+    top: 0vh;
     left: 80vw;
     width: 20%;
     height: 40%;
     background: linear-gradient(#ffffff, #ffcf49);
     /* clip-path: circle(29% at 50% 50%); */
+    z-index: -6;
+}
+
+.shape3 {
+    position: absolute;
+    top: 65vh;
+    left: 69vw;
+    width: 30%;
+    height: 30%;
+    background: linear-gradient(#fee9ca, #ffdbdb);
+    /* clip-path: circle(29% at 50% 50%); */
+    z-index: -6;
+}
+
+.shape4 {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    width: 20%;
+    height: 20%;
+    background: linear-gradient(#fff9f0, #fdecd1);
+    /* clip-path: circle(29% at 50% 50%); */
+    z-index: -6;
+}
+
+.shape5 {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 30%;
+    height: 20%;
+    background: linear-gradient(#ffecaf, #ffe17d, #d87340);
+    /* clip-path: circle(50% at 50% 50%); */
+    /* clip-path: polygon(0% 0%, 50% 50%, 50% 50%, 0% 50%); */
     z-index: -6;
 }
 
