@@ -74,27 +74,13 @@ nav {
     z-index: 100;
 }
 
-/* CHECKING OUT */
-#home-content {
-    height: 600px;
-    width: 100vw;
-    border: 3px black solid;
-}
-#work {
-    height: auto;
-    border: 3px black solid;
+nav ul li {
+    width: 100px;
 }
 
-#about {
-    height: 600px;
-    width: 100vw;
-    border: 3px black solid;
-}
-
-#contact {
-    height: 600px;
-    width: 100vw;
-    border: 3px black solid;
+nav ul a {
+    padding: 0 !important;
+    text-align: center;
 }
 
 @media only screen and (max-width: 680px) {
