@@ -1,6 +1,52 @@
+#hero-container-for-blur {
+    /* filter: blur(100px); */
+    backdrop-filter: blur(120px);
+    /* background-color: yellow; */
+    height: 95vh;
+    width: 100vw;
+    z-index: -4;
+}
+
+#hero-text {
+    position: absolute;
+    top: 27%;
+    left: 15%;
+    width: 630px;
+}
+
+.p-hero {
+    font-size: 1.3rem !important;
+    line-height: 1.8rem !important;
+}
+
+#heroButton {
+    z-index: 1;
+    position: relative;
+    font-size: 1rem;
+    font-family: inherit;
+    color: white;
+    padding: 0.9em 1em 1em 1em;
+    outline: none;
+    overflow: hidden;
+    transition: color 0.2s ease-in-out;
+    border: none;
+    background-color: #dd8051;
+    border-radius: 0px;
+    box-shadow: 0px 2px 5px 0px #e7a381;
+    margin-top: 25px;
+}
+
+#hero-profile {
+    position: absolute;
+    top: 24vh;
+    left: 20vw;
+    width: 25vw;
+    height: auto;
+}
+
 #scrollDown {
     position: relative;
-    top: -120px;
+    top: -130px;
     text-align-last: center;
 
     animation: rotate 10s linear infinite;
@@ -19,8 +65,43 @@
 
 #arrowDown {
     position: relative;
-    top: -180px;
+    top: -190px;
     text-align-last: center;
     transform-box: fill-box;
     transform-origin: 50% 50%;
 }
+
+.circle {
+    content: "";
+    position: absolute;
+    top: 75%;
+    left: 0;
+    width: 20%;
+    height: 20%;
+    background: linear-gradient(#ffe17d, #b34c19);
+    /* clip-path: circle(50% at 50% 50%); */
+    /* clip-path: polygon(0% 0%, 50% 50%, 50% 50%, 0% 50%); */
+    z-index: -6;
+}
+
+.circle2 {
+    content: "";
+    position: absolute;
+    top: 5vh;
+    left: 80vw;
+    width: 20%;
+    height: 40%;
+    background: linear-gradient(#ffffff, #ffcf49);
+    /* clip-path: circle(29% at 50% 50%); */
+    z-index: -6;
+}
+
+/* .square {
+    position: absolute;
+    top: 20vh;
+    left: 30vw;
+    width: 200px;
+    height: 100px;
+    border: 2px solid green;
+    backdrop-filter: blur(15px);
+} */

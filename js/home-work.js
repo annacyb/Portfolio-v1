@@ -6,7 +6,8 @@ let SELECTEDFILTERS = [];
 const PROJECTS = [
     {
         title: "L'Atelier Michaud website redesign",
-        filters: "UX/UI design | UX research | Front-end | Graphic design",
+        filters:
+            "UX/UI design | UX research | Branding | Front-end | Graphic design",
         img_src: "./images/squarePhotos/LAtelierMichaud-square.png",
         page_link: "",
         client: "L'Atelier Michaud - jewellery brand",
@@ -14,7 +15,7 @@ const PROJECTS = [
         year: "2021",
     },
     {
-        title: "(Innoflow work)",
+        title: "Innoflow work",
         filters: "UX/UI design | UX research | Graphic design",
         img_src: "./images/squarePhotos/Innoflow1-square.png",
         page_link: "",
@@ -40,27 +41,28 @@ const PROJECTS = [
         type: "4 people group work",
         year: "2020",
     },
-    {
-        title: "Silfen bags web shop??",
-        filters: "UX/UI design | UX research | Front-end | Graphic design",
-        img_src: "./images/squarePhotos/Magazine-square.png",
-        page_link: "",
-        client: "Silfen - accessories web shop",
-        type: "4 people group work",
-        year: "2021",
-    },
-    {
-        title: "Me-Mover web campaign??",
-        filters: "UX/UI design | UX research | Graphic design",
-        img_src: "./images/squarePhotos/Magazine-square.png",
-        page_link: "",
-        client: "Me-Mover - crosstepper machine producer",
-        type: "4 people group work",
-        year: "2021",
-    },
+    // {
+    //     title: "Silfen bags web shop??",
+    //     filters:
+    //         "UX/UI design | UX research | Front-end | Branding | Graphic design",
+    //     img_src: "./images/squarePhotos/Magazine-square.png",
+    //     page_link: "",
+    //     client: "Silfen - accessories web shop",
+    //     type: "4 people group work",
+    //     year: "2021",
+    // },
+    // {
+    //     title: "Me-Mover web campaign??",
+    //     filters: "UX/UI design | UX research | Graphic design",
+    //     img_src: "./images/squarePhotos/Magazine-square.png",
+    //     page_link: "",
+    //     client: "Me-Mover - crosstepper machine producer",
+    //     type: "4 people group work",
+    //     year: "2021",
+    // },
     {
         title: "Printed calendar focused on music festivals",
-        filters: "Graphic design | Print",
+        filters: "Branding | Graphic design | Print",
         img_src: "./images/squarePhotos/MusicFestivalCalendar-square.png",
         page_link: "",
         client: "Mjuzikal - made up company seeling music calendars",

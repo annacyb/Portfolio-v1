@@ -44,7 +44,7 @@
     margin-right: auto;
     margin-left: auto;
     background-color: white;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 #bottom_space {
@@ -64,6 +64,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2em;
+    margin-top: -45px;
 }
 
 /* FILTER BUTTONS */
