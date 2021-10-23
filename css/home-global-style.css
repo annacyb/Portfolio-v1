@@ -1,5 +1,4 @@
-/* CHECKING OUT */
-#home-content {
+#hero-content {
     height: 600px;
     width: 100vw;
     /* border: 3px black solid; */
@@ -10,7 +9,7 @@
     opacity: 0.6;
 }
 
-#home-container-for-blur {
+#hero-container-for-blur {
     /* filter: blur(100px); */
     backdrop-filter: blur(80px);
     /* background-color: yellow; */

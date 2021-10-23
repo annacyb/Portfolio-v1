@@ -1,0 +1,26 @@
+#scrollDown {
+    position: relative;
+    top: -120px;
+    text-align-last: center;
+
+    animation: rotate 10s linear infinite;
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#arrowDown {
+    position: relative;
+    top: -180px;
+    text-align-last: center;
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+}
