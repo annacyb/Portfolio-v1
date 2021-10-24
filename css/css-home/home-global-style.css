@@ -13,13 +13,16 @@
         0% 0% no-repeat padding-box;
     /* opacity: 0.6; */
     mix-blend-mode: multiply;
+    /* so that blur elements will not be seen outside hero-constnt section */
+    overflow: hidden;
+    position: relative;
 }
 
 #work {
     height: auto;
     /* border: 3px black solid; */
 
-    z-index: -3;
+    z-index: 0;
     background-color: white;
     padding-bottom: 30px;
     box-shadow: 0px 0px 10px 5px #dd805124;

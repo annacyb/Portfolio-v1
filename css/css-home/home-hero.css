@@ -1,6 +1,5 @@
 #hero-container-for-blur {
-    /* filter: blur(100px); */
-    backdrop-filter: blur(120px);
+    /* backdrop-filter: blur(120px); */
     /* background-color: yellow; */
     height: 95vh;
     width: 100vw;
@@ -95,6 +94,7 @@
     /* clip-path: circle(50% at 50% 50%); */
     /* clip-path: polygon(0% 0%, 50% 50%, 50% 50%, 0% 50%); */
     z-index: -6;
+    filter: blur(150px);
 }
 
 .shape2 {
@@ -106,6 +106,7 @@
     background: linear-gradient(#ffffff, #ffcf49);
     /* clip-path: circle(29% at 50% 50%); */
     z-index: -6;
+    filter: blur(150px);
 }
 
 .shape3 {
@@ -117,6 +118,7 @@
     background: linear-gradient(#fee9ca, #ffdbdb);
     /* clip-path: circle(29% at 50% 50%); */
     z-index: -6;
+    filter: blur(150px);
 }
 
 .shape4 {
@@ -128,6 +130,7 @@
     background: linear-gradient(#fff9f0, #fdecd1);
     /* clip-path: circle(29% at 50% 50%); */
     z-index: -6;
+    filter: blur(150px);
 }
 
 .shape5 {
@@ -140,6 +143,7 @@
     /* clip-path: circle(50% at 50% 50%); */
     /* clip-path: polygon(0% 0%, 50% 50%, 50% 50%, 0% 50%); */
     z-index: -6;
+    filter: blur(150px);
 }
 
 /* .square {
