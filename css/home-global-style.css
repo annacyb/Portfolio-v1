@@ -28,11 +28,12 @@
 #about {
     height: 600px;
     width: 100vw;
-    border: 3px black solid;
+    background-color: #fff7e6;
+
+    display: flex;
 }
 
 #contact {
     height: 600px;
     width: 100vw;
-    border: 3px black solid;
 }
